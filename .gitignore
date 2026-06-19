@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.python-version
+
+# Environment / secrets
+.env
+*.local
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Robovac runtime artifacts
+logs/
+*.log
+maps/*.pgm
+maps/*.png
+recordings/
+
+# Firmware build output (PlatformIO)
+firmware/**/.pio/
+firmware/**/.pioenvs/
