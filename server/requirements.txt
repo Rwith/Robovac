@@ -1,0 +1,8 @@
+# Server-side dependencies (install on the always-on host, inside a venv)
+fastapi
+uvicorn[standard]
+pydantic>=2
+python-multipart   # multipart map-image upload
+paho-mqtt          # subscribe to robot telemetry
+numpy
+Pillow             # encode/decode occupancy-grid PNGs

@@ -1,0 +1,17 @@
+[project]
+name = "robovac"
+version = "0.1.0"
+description = "3D-printed robot vacuum: LiDAR+camera SLAM, server-backed path planning"
+requires-python = ">=3.10"
+
+# Robot and server have their own requirements.txt files (different machines).
+# This file mainly lets the `robot`, `server`, `shared` packages import cleanly
+# and gives pytest a project root.
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

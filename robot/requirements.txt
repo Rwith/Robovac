@@ -1,0 +1,11 @@
+# Robot-side dependencies (install on the ROCK 4C+, inside a venv)
+rplidar          # RPLidar A1 driver (alt: rplidar-roboticia, a maintained fork)
+opencv-python    # camera capture + ORB features for visual localization
+numpy
+pyserial         # serial link to the ESP32 motor controller
+paho-mqtt        # realtime telemetry to the server
+requests         # HTTP map upload / status
+
+# BreezySLAM is installed from source, not pip — see robot/perception/slam.py:
+#   git clone https://github.com/simondlevy/BreezySLAM
+#   cd BreezySLAM/python && python setup.py install

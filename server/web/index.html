@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Robovac Dashboard</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header>
+    <h1>🤖 Robovac</h1>
+    <div id="status">disconnected</div>
+  </header>
+
+  <main>
+    <canvas id="map" width="800" height="800"></canvas>
+    <aside>
+      <button data-cmd="start_mapping">Start mapping</button>
+      <button data-cmd="start_cleaning">Start cleaning</button>
+      <button data-cmd="stop">Stop</button>
+      <button data-cmd="return_to_dock">Return to dock</button>
+      <p id="coverage">Coverage: —</p>
+    </aside>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
