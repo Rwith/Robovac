@@ -24,7 +24,7 @@ tools/      # log replay, map viewer, calibration
 tests/
 ```
 
-See the design plan for the full architecture, bill of materials, and milestone roadmap.
+See **[docs/PLAN.md](docs/PLAN.md)** for the full architecture, bill of materials, and milestone roadmap.
 
 ## Quickstart (dev PC, no hardware needed)
 
